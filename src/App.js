@@ -1,9 +1,17 @@
 import React from 'react';
 import './App.css';
+import FilterRemover from './FilterRemove';
+import Input from './Components/Input';
+import Table from './Components/Table';
+import StarWarsProvider from './Context/StarWarsProvider';
 
 function App() {
   return (
-    <span>Hello</span>
+    <StarWarsProvider>
+      <Table />
+      <Input />
+      <FilterRemover />
+    </StarWarsProvider>
   );
 }
 
